@@ -1,3 +1,13 @@
+libdbi-perl (1.634-1ubuntu0.1) xenial-security; urgency=medium
+
+  * SECURITY UPDATE: Memory corruption
+    - debian/patches/CVE-2020-14392.patch: changes fix memory
+      corruption in XS functions when Perl stack is reallocated in
+      DBI.xs, Driver.xst.
+    - CVE-2020-14392
+
+ -- Leonidas S. Barbosa <leo.barbosa@canonical.com>  Mon, 14 Sep 2020 13:23:06 -0300
+
 libdbi-perl (1.634-1build1) xenial; urgency=medium
 
   * Rebuild for Perl 5.22.1.
